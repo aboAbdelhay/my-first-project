@@ -1,0 +1,494 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-blue: #17a3d8;
+  --color-section: #f6f7f9;
+  --color-footer: #2e3e4e;
+  --color-button: #f5855f;
+  --color-h1: #c27b67;
+  --color-p: #a8a9ab;
+}
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+/* nav */
+
+.n1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  align-self: center;
+  display: flex;
+  width: 80px;
+  height: 80px;
+}
+nav .logo img {
+  width: 100%;
+}
+ul li {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+ul .active a {
+  color: white;
+}
+.blog a {
+  padding: 4px 10px;
+  color: white;
+  background-color: var(--color-button);
+}
+ul li:hover,
+li:hover a,
+.active {
+  color: white !important;
+  background-color: var(--color-blue);
+}
+.search {
+  display: flex;
+}
+.search p {
+  padding: 5px;
+}
+.search .icon-search {
+  font-size: 20px;
+}
+.search div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-button);
+}
+
+/* slid */
+
+.slid {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.slid .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 60%);
+}
+.slid .text {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+
+.slid button {
+  background-color: var(--color-button);
+  padding: 5px 50px;
+  margin: 50px auto 300px;
+  color: white;
+}
+
+/* slid2 */
+.slid2 button {
+  background-color: var(--color-blue);
+  padding: 5px 35px;
+  margin-top: 50px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.slid2 .header {
+  text-align: center;
+  margin-top: -70px;
+}
+.slid2 .boxs {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 100px;
+}
+.slid2 .box {
+  width: 200px;
+  text-align: center;
+}
+.slid2 .icon {
+  background-color: var(--color-blue);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg {
+  font-size: 50px;
+}
+.slid2 .box h2 {
+  margin-top: 10px;
+}
+/* Portfolio */
+.Portfolio {
+  background-color: var(--color-footer);
+  padding: 50px 0;
+}
+.n2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Portfolio .n2 h1,
+.Portfolio .n3 h2 {
+  color: var(--color-h1);
+}
+.Portfolio .n2 button {
+  background-color: var(--color-blue);
+  color: white;
+  padding: 5px;
+}
+.Portfolio .n2 button:hover {
+  animation-name: wobble;
+  animation-duration: 3s;
+}
+
+.Portfolio .n3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+.Portfolio .n3 .box {
+  width: 300px;
+}
+.Portfolio .n3 .box img {
+  width: 300px;
+  outline: 8px solid white;
+}
+.imggg:hover img {
+  animation-name: wobble;
+  animation-duration: 3s;
+}
+.imggg {
+  position: relative;
+}
+.imggg button {
+  width: 100px;
+  text-align: center;
+  margin: 114px auto auto 110px;
+  position: absolute;
+  border: 1px solid white;
+  left: 0;
+  top: 0;
+  color: white;
+  display: none;
+  background-color: #bebebe;
+}
+.imggg:hover button {
+  display: block;
+  animation-name: swing;
+  animation-duration: 2s;
+}
+
+.Portfolio .n3 .box h2 {
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: left;
+}
+.Portfolio .n3 .box p {
+  color: #76828e;
+}
+/* offer/////////// */
+.offer {
+  padding: 40px 0 50px;
+}
+.offer .text {
+  margin: 0 auto 40px;
+  width: 700px;
+  text-align: center;
+}
+.offer .text h1 {
+  color: var(--color-blue);
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.offer .box {
+  display: flex;
+  justify-content: space-between;
+}
+.offer .box .box1 {
+  position: relative;
+  width: 200px;
+}
+.offer .box .box1 h4 {
+  font-size: 20px;
+  color: var(--color-blue);
+}
+.offer .box .box1 p {
+  text-align: justify;
+}
+.offer .box .box1 button {
+  background-color: var(--color-blue);
+  padding: 1px 4px;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  color: white;
+  border: 2px solid white;
+}
+/* slid3//////////////////////// */
+.slid3 .text {
+  width: 800px;
+  text-align: center;
+  margin: auto;
+}
+.slid3 .text h1 {
+  color: var(--color-blue);
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.slid3 .text p:first-of-type {
+  font-size: 15px;
+  font-weight: bold;
+}
+.slid3 .text p:last-of-type {
+  color: var(--color-button);
+}
+.slid3 .icons {
+  width: 400px;
+  margin: 35px auto 50px;
+  text-align: center;
+}
+
+.slid3 .icons div {
+  border-radius: 50%;
+  width: 100px;
+  height: 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.slid3 .icons div:hover {
+  animation-name: rotateIn;
+  animation-duration: 2s;
+  background-color: var(--color-button);
+}
+
+.activeee {
+  background-color: #b4b4b4;
+}
+.activee {
+  background-color: var(--color-button);
+}
+.slid3 .icons div .man {
+  font-size: 45px;
+}
+/* footer //////////////////// */
+footer {
+  background-color: var(--color-footer);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.f {
+  width: 210px;
+}
+.f h1 {
+  color: var(--color-button);
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.f p {
+  color: #62737d;
+}
+.check p:first-child {
+  margin-bottom: 0;
+}
+.hr {
+  color: white;
+}
+.footer a {
+  color: #2f6d8f;
+  text-decoration: none;
+}
+.f2 {
+  position: relative;
+}
+input {
+  width: 100%;
+}
+.footer button {
+  background-color: var(--color-blue);
+  padding: 0px 10px;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  color: white;
+}
+.f2 p:last-of-type {
+  color: #2f6d8f;
+}
+.f33 {
+  display: flex;
+  justify-content: space-between;
+}
+.imgg {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+.phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.f4 .pp {
+  font-size: 50px;
+}
+.number p {
+  margin-bottom: 2px;
+}
+/* contact////////////////////////// */
+.slid .container .contact h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: auto;
+  padding: 200px 0;
+}
+/* slid5///////////////////// */
+.slid5 {
+  background-color: var(--color-section);
+}
+.slid5 .container {
+  padding: 50px 0;
+}
+.slid5 .text {
+  width: 900px;
+  text-align: center;
+  margin: auto auto 20px;
+}
+.slid5 .text h1 {
+  color: var(--color-blue);
+  font-size: 30px;
+}
+.aslid5 {
+  /* padding-bottom: 60px; */
+  display: flex;
+}
+.aslid5 .form {
+  padding-bottom: 60px;
+  width: 500px;
+  border-right: 2px solid #ccc;
+}
+.container2 {
+  width: 350px;
+  position: relative;
+}
+.aslid5 .form input {
+  width: 350px;
+}
+.slid5 span {
+  color: red;
+}
+.aslid5 .map {
+  padding-bottom: 80px;
+  width: 500px;
+  padding-left: 100px;
+}
+.aslid5 h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+textarea {
+  width: 350px;
+}
+.code {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.aslid5 .form .num1 {
+  width: 200px;
+  height: 50px;
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  margin-right: 15px;
+}
+.aslid5 .form .num2 {
+  width: 130px;
+  height: 20px;
+}
+.aslid5 .form button {
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  padding: 1px 15px;
+  color: white;
+  background-color: var(--color-blue);
+}
+.map .first {
+  display: flex;
+  margin-bottom: 50px;
+}
+.cc {
+  font-size: 25px;
+  color: white;
+}
+.map .lefta {
+  width: 40px;
+  background-color: #abacb0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.righta {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.number span,
+.number a {
+  color: var(--color-blue);
+}
+.secand img {
+  width: 100%;
+}
+.map h4 {
+  font-size: 34px;
+  margin-top: 40px;
+}
+.squars {
+  display: flex;
+  justify-content: space-between;
+}
+.squars .squar {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
